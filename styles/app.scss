@@ -13,7 +13,8 @@ $c-yellow: #e5b178;
 @import 'reset';
 
 .section {
-  // display: flex;
+  color: $c-primary;
+  background: $c-white;
   margin: 0 auto;
   padding: 1rem;
 
@@ -33,12 +34,38 @@ $c-yellow: #e5b178;
   &__item {
     width: calc(100% / 3 - 2rem);
     margin: 1rem;
-    // overflow: auto;
+    border: 0.2rem solid $c-primary;
 
   }
 }
 
 .shop-item {
-  &__frame {
+  &__frame {}
+
+  &__details {
+    text-align: center;
+  }
+
+  &__actions {
+    display: flex;
+    border-top: 0.2rem solid $c-primary;
+
+
+    &-btn {
+
+      border: 0;
+      border-right: 0.2rem solid $c-primary;
+      background: $c-white;
+      width: calc(100% / 5);
     }
+  }
+}
+
+.shop-menu {
+  position: relative;
+
+  &__tooltip {
+    position: absolute;
+  }
+
 }
