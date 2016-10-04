@@ -27,7 +27,6 @@ $c-yellow: #e5b178;
 }
 
 .grid {
-  // overflow: auto;
   display: flex;
   flex-wrap: wrap;
 
@@ -50,13 +49,12 @@ $c-yellow: #e5b178;
     display: flex;
     border-top: 0.2rem solid $c-primary;
 
-
     &-btn {
-
-      border: 0;
-      border-right: 0.2rem solid $c-primary;
-      background: $c-white;
       width: calc(100% / 5);
+      border: 0;
+      background: $c-white;
+      border-right: 0.2rem solid $c-primary;
+      color: $c-primary;
     }
   }
 }
@@ -66,6 +64,12 @@ $c-yellow: #e5b178;
 
   &__tooltip {
     position: absolute;
+    bottom: 100%;
+    left: -1%;
+    transform: translate();
+    border: 0.2rem solid $c-primary;
+    padding: 1.2rem;
+
   }
 
 }
