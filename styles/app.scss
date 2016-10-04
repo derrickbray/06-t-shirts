@@ -10,7 +10,35 @@ $c-green: #7abe93;
 $c-yellow: #e5b178;
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'reset';
 
-* {
-  border: 0.1rem solid black;
+.section {
+  // display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+.container {
+  width: 60rem;
+  // display: flex;
+  margin: 0 auto;
+}
+
+.grid {
+  // overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem;
+    // overflow: auto;
+
+  }
+}
+
+.shop-item {
+  &__frame {
+    }
 }
