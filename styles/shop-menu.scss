@@ -23,8 +23,8 @@
 
     border: 0.1rem solid $c-primary;
     padding: 1rem;
-    color: $c-white;
-    background: $c-primary;
+    background: $c-white;
+    color: $c-primary;
 
 
     &--color {
@@ -46,8 +46,15 @@
     &:hover {
       flex-grow: 1;
       font-size: 1rem;
-      color: $c-white;
-      // transform: scale(1.2);
+      background: $c-white;
+      border: 0.2rem solid $c-primary;
     }
+  }
+}
+ .fa-square{
+
+  &:hover {
+    transform: scale(1.5);
+
   }
 }
