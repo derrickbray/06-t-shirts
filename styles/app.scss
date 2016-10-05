@@ -11,6 +11,7 @@ $c-yellow: #e5b178;
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'reset';
+@import 'shop-item';
 
 .section {
   color: $c-primary;
@@ -38,34 +39,6 @@ $c-yellow: #e5b178;
   }
 }
 
-.shop-item {
-  &__frame {}
-
-  &__details {
-    text-align: center;
-  }
-
-  &__actions {
-    display: flex;
-    border-top: 0.2rem solid $c-primary;
-
-    &-btn {
-      width: calc(100% / 5);
-      border: 0;
-      background: $c-white;
-      border-right: 0.1rem solid $c-primary;
-      border-left: 0.1rem solid $c-primary;
-      color: $c-primary;
-
-      &:hover {
-        transform: scale(1.2);
-        border: 0.2rem solid $c-primary;
-        color: $c-white;
-        background: $c-primary;
-      }
-    }
-  }
-}
 
 .shop-menu {
   position: relative;
@@ -79,22 +52,44 @@ $c-yellow: #e5b178;
     // display: none;
 
     &:hover {
-      transform: scale(1.2);
       flex-direction: column;
       flex-grow: 1;
+      // transform: scale(1.1);
       // display: block;
       z-index: 1;
+      font-size: 1rem;
     }
   }
 
   &__tooltip-item {
-    border-top: 0.1rem solid $c-primary;
-    border-left: 0.1rem solid $c-primary;
-    border-right: 0.1rem solid $c-primary;
-    padding: 1rem;
 
+    border: 0.1rem solid $c-primary;
+    padding: 1rem;
+    color: $c-white;
+    background: $c-primary;
+
+
+    &--color {
+
+
+      &-red {
+        color: $c-pink;
+      }
+      &-blue{
+        color: $c-blue;
+      }
+      &-yellow{
+        color: $c-yellow
+      }
+      &-green{
+        color: $c-green;
+      }
+    }
     &:hover {
-      transform: scale(1.2);
+      flex-grow: 1;
+      font-size: 1rem;
+      color: $c-white;
+      // transform: scale(1.2);
     }
   }
 }
