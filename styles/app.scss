@@ -56,6 +56,13 @@ $c-yellow: #e5b178;
       border-right: 0.1rem solid $c-primary;
       border-left: 0.1rem solid $c-primary;
       color: $c-primary;
+
+      &:hover {
+        transform: scale(1.2);
+        border: 0.2rem solid $c-primary;
+        color: $c-white;
+        background: $c-primary;
+      }
     }
   }
 }
@@ -67,10 +74,27 @@ $c-yellow: #e5b178;
     position: absolute;
     bottom: 100%;
     left: -1%;
-    transform: translate();
-    border: 0.2rem solid $c-primary;
-    padding: 1.2rem;
+    // border: 0.2rem solid $c-primary;
+    padding: 0;
     // display: none;
+
+    &:hover {
+      transform: scale(1.2);
+      flex-direction: column;
+      flex-grow: 1;
+      // display: block;
+      z-index: 1;
+    }
   }
 
+  &__tooltip-item {
+    border-top: 0.1rem solid $c-primary;
+    border-left: 0.1rem solid $c-primary;
+    border-right: 0.1rem solid $c-primary;
+    padding: 1rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
