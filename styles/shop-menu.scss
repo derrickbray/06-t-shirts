@@ -5,16 +5,11 @@
     position: absolute;
     bottom: 100%;
     left: -1%;
-    // border: 0.2rem solid $c-primary;
     padding: 0;
     // display: none;
-
     &:hover {
       flex-direction: column;
-      flex-grow: 1;
-      // transform: scale(1.1);
       // display: block;
-      z-index: 1;
       font-size: 1rem;
     }
   }
@@ -26,23 +21,24 @@
     background: $c-white;
     color: $c-primary;
 
-
     &--color {
-
-
       &-red {
         color: $c-pink;
       }
-      &-blue{
+
+      &-blue {
         color: $c-blue;
       }
-      &-yellow{
-        color: $c-yellow
+
+      &-yellow {
+        color: $c-yellow;
       }
-      &-green{
+
+      &-green {
         color: $c-green;
       }
     }
+
     &:hover {
       flex-grow: 1;
       font-size: 1rem;
@@ -51,8 +47,8 @@
     }
   }
 }
- .fa-square{
 
+.fa-square {
   &:hover {
     transform: scale(1.5);
 
