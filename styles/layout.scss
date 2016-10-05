@@ -1,0 +1,25 @@
+.section {
+  color: $c-primary;
+  background: $c-white;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+.container {
+  width: 60rem;
+  // display: flex;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: calc(100% / 3 - 2rem);
+    margin: 1rem;
+    border: 0.2rem solid $c-primary;
+
+  }
+}
