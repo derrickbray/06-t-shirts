@@ -1,4 +1,7 @@
 .shop-item {
+  display: flex;
+  flex-direction: column;
+
   &__frame {}
 
   &__details {
@@ -21,6 +24,20 @@
 
         color: $c-white;
         background: $c-primary;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: row;
+
+    &__actions{
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-btn{
+        border: 0.1rem solid $c-primary;
+
       }
     }
   }
