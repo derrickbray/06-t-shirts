@@ -49,6 +49,15 @@
       border: 0.2rem solid $c-primary;
     }
   }
+
+  @media (max-width: 640px){
+    &__tooltip{
+      flex-direction: row;
+      right: 100%;
+      // top: 100%;
+      transform: translate(-400%, 100%);
+    }
+  }
 }
 
 .fa-square {
