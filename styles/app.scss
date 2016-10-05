@@ -53,7 +53,8 @@ $c-yellow: #e5b178;
       width: calc(100% / 5);
       border: 0;
       background: $c-white;
-      border-right: 0.2rem solid $c-primary;
+      border-right: 0.1rem solid $c-primary;
+      border-left: 0.1rem solid $c-primary;
       color: $c-primary;
     }
   }
@@ -69,7 +70,7 @@ $c-yellow: #e5b178;
     transform: translate();
     border: 0.2rem solid $c-primary;
     padding: 1.2rem;
-
+    // display: none;
   }
 
 }
