@@ -44,25 +44,29 @@
 
     &:hover {
       flex-grow: 1;
-      font-size: 1rem;
       background: $c-white;
       border: 0.2rem solid $c-primary;
     }
   }
 
-  @media (max-width: 640px){
-    &__tooltip{
+  @media (max-width: 640px) {
+    &__tooltip {
       flex-direction: row;
-      right: 100%;
-      // top: 100%;
-      transform: translate(-400%, 100%);
+      left: 100%;
+      transform: translate(-613%, 100%);
+      padding: 0;
+      height: 100%;
     }
+     &-item {
+       vertical-align: middle;
+     }
   }
 }
 
 .fa-square {
   &:hover {
-    transform: scale(1.5);
+    transform: scale(2);
+
 
   }
 }

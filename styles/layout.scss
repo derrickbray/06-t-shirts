@@ -15,8 +15,7 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  // flex-grow: 1;
-  // text-align: center;
+
 
   &__item {
     width: calc(100% / 3 - 2rem);
