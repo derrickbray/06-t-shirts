@@ -48,7 +48,6 @@
       background: $c-white;
     }
   }
-
   @media (max-width: 640px) {
     &__tooltip {
       left: 100%;
@@ -57,17 +56,16 @@
       padding: 0;
       transform: translate(-613%, 100%);
     }
-    &-item--color {
-      //  vertical-align: middle;
+    // &-item--color {
+    //  vertical-align: middle;
 
-     }
+    //  }
   }
 }
 
 .fa-square {
   &:hover {
     transform: scale(2);
-
 
   }
 }

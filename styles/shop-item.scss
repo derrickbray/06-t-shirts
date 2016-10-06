@@ -27,7 +27,6 @@
       }
     }
   }
-
   @media (max-width: 640px) {
     flex-direction: row;
 
@@ -35,11 +34,9 @@
       flex-direction: column;
       border-left: 0.2rem solid $c-primary;
 
-
       &-btn {
         padding: 0.8rem;
         border: 0.1rem solid $c-primary;
-
 
       }
     }

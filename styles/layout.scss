@@ -1,8 +1,8 @@
 .section {
-  color: $c-primary;
-  background: $c-white;
   margin: 0 auto;
   padding: 1rem;
+  background: $c-white;
+  color: $c-primary;
 
 }
 
@@ -15,7 +15,6 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-
 
   &__item {
     flex-grow: 1;
