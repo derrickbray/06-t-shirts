@@ -3,12 +3,10 @@
   padding: 1rem;
   background: $c-white;
   color: $c-primary;
-
 }
 
 .container {
   max-width: 60rem;
-  // display: flex;
   margin: 0 auto;
 }
 
@@ -21,7 +19,7 @@
     width: calc(100% / 3 - 2rem);
     min-width: 18rem;
     margin: 1rem;
-    border: 0.2rem solid $c-primary;
+    border: 0.1rem solid $c-primary;
 
   }
 }

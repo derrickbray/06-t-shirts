@@ -2,26 +2,26 @@
   display: flex;
   flex-direction: column;
 
-  // &__frame {}
-
   &__details {
     text-align: center;
   }
 
   &__actions {
     display: flex;
-    border-top: 0.2rem solid $c-primary;
+    border-top: 0.1rem solid $c-primary;
 
     &-btn {
       flex-grow: 1;
       border: 0;
-      border-right: 0.1rem solid $c-primary;
       border-left: 0.1rem solid $c-primary;
       background: $c-white;
       color: $c-primary;
 
-      &:hover {
+      &:first-of-type {
+        border-left: 0;
+      }
 
+      &:hover {
         background: $c-primary;
         color: $c-white;
       }
@@ -33,13 +33,15 @@
     &__actions {
       flex-direction: column;
       border: 0;
-      // border-left: 0.2rem solid $c-primary;
 
       &-btn {
         padding: 0.8rem;
         border-top: 0.1rem solid $c-primary;
-        // &:last-of-type:
-          // border-top: 0;
+
+        &:first-of-type {
+          border-top: 0;
+          border-left: 0.1rem solid $c-primary;
+        }
       }
     }
   }
