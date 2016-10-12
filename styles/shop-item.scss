@@ -32,12 +32,14 @@
 
     &__actions {
       flex-direction: column;
-      border-left: 0.2rem solid $c-primary;
+      border: 0;
+      // border-left: 0.2rem solid $c-primary;
 
       &-btn {
         padding: 0.8rem;
-        border: 0.1rem solid $c-primary;
-
+        border-top: 0.1rem solid $c-primary;
+        // &:last-of-type:
+          // border-top: 0;
       }
     }
   }
