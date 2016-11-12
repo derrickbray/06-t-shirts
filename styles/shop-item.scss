@@ -41,9 +41,11 @@
         &:first-of-type {
           border-top: 0;
           border-left: 0.1rem solid $c-primary;
+          // border-right: 0.1rem solid $c-primary;
+
         }
         &:last-of-type {
-          // border-top: 0;
+          // border-left: 0.1rem solid $c-primary;
         }
       }
     }
