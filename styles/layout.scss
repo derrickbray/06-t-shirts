@@ -1,0 +1,33 @@
+.section {
+  margin: 0 auto;
+  padding: 1rem;
+  background: $c-white;
+  color: $c-primary;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex-grow: 1;
+    width: calc(100% / 3 - 2rem);
+    min-width: 18rem;
+    margin: 1rem;
+    border: 0.1rem solid $c-primary;
+
+    @media(max-width: 990px) {
+      width: calc(100% / 2 - 2rem);
+    }
+
+    @media(max-width: 670px) {
+      width: calc(100% - 2rem);
+    }
+
+  }
+}
