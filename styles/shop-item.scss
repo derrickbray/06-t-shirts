@@ -13,8 +13,10 @@
 
     &-btn {
       flex-grow: 1;
+      padding: 0.5rem;
       border: 0;
       border-left: 0.1rem solid $c-primary;
+      outline: none;
       background: $c-white;
       color: $c-primary;
 
